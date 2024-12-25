@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Always Fit Gym</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff;
+        }
+
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #f0ad4e;
+        }
+
+        .discount-poster {
+            position: absolute;
+            top: 80px;
+            left: 0px;
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            z-index: 1000;
+        }
+
+        .hero-section {
+            background-color: #333;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+            background-color: lightblue;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            color: #000;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+        }
+
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .services-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .service-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: none;
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            padding: 50px 0;
+            background-color: lightblue;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .timing-section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        .timing-section h2 {
+            color: #333;
+        }
+
+        .timing-section p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .timing-section{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Discount Poster -->
+    <div class="discount-poster">
+        Flat 20% Discount for Students!
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#home">Always Fit Gym</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <!-- Inquiry Button -->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-secondary nav-link" data-toggle="modal" data-target="#inquiryModal">
+                        Inquiry
+                    </button>
+                </li>
+                <!-- Membership Button with added margin -->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-secondary nav-link ml-2" data-toggle="modal" data-target="#membershipModal">
+                        Membership
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Gym Photo -->
+    <div class="hero-section" id="home">
+        <div class="container">
+            <h1>Welcome to Always Fit Gym </h1>
+            <p>Your health, our priority.</p>
+            <!-- Gym Photo -->
+            <img src="gym.jpg" alt="Gym Photo">
+        </div>
+    </div>
+
+    <div class="services-section">
+        <h2>Our Services</h2> <!-- Services heading -->
+
+        <!-- Services Section -->
+        <div class="services-section" id="services">
+            <div class="container">
+                <div class="row">
+                    <!-- Service Card -->
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <img src="cardio.jpg" alt="Cardio">
+                            <h5>Cardio Training</h5>
+                            <p>Cardio training, also known as cardiovascular or aerobic exercise, involves activities that increase your heart rate and improve the efficiency of your cardiovascular system. These exercises typically involve rhythmic, continuous movements that work large muscle groups, such as those in the legs. The primary goal of cardio training is to improve overall heart health, increase stamina, and burn calories.</p>
+                        </div>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <img src="weight.jpg" alt="Weight Lifting">
+                            <h5>Weight Lifting</h5>
+                            <p>Weight lifting, also known as resistance training or strength training, involves using weights or other forms of resistance to build muscle strength and endurance. This form of exercise is designed to increase muscle strength, size, and overall fitness by targeting specific muscle groups.</p>
+                        </div>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <img src="yoga.jpg" alt="Yoga">
+                            <h5>Yoga Classes</h5>
+                            <p>Yoga classes are designed to improve physical flexibility, strength, and mental well-being through a series of postures, breathing exercises, and meditation techniques. Yoga combines physical movement with breath control and mindfulness, aiming to harmonize the body, mind, and spirit. In a typical yoga class, participants practice various asanas (postures) that stretch and strengthen the body.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inquiry Modal -->
+    <div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="inquiryModalLabel">Inquiry Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Inquiry"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Membership Modal -->
+     <div class="modal fade" id="membershipModal" tabindex="-1" aria-labelledby="membershipModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="membershipModalLabel">Membership Plans</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-deck">
+                         <!-- 1 Month Plan -->
+                         <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">1 Month</h5>
+                                <p class="card-text">₹2499</p>
+                                <button class="btn btn-warning">Sign Up</button>
+                            </div>
+                        </div>
+                        <!-- 3 Months Plan -->
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">3 Months</h5>
+                                <p class="card-text">₹4999</p>
+                                <button class="btn btn-warning">Sign Up</button>
+                            </div>
+                        </div>
+                        <!-- 6 Months Plan -->
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">6 Months</h5>
+                                <p class="card-text">6999</p>
+                                <button class="btn btn-warning">Sign Up</button>
+                            </div>
+                        </div>
+                        <!-- 12 Months Plan -->
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">12 Months</h5>
+                                <p class="card-text">₹8999</p>
+                                <button class="btn btn-warning">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Gym Timings Section -->
+    <div class="timing-section">
+        <div class="container">
+            <h2>Gym Timings</h2>
+            <p><strong>Morning:</strong> 5:00 AM - 9:00 AM</p>
+            <p><strong>Evening:</strong> 5:00 PM - 9:00 PM</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Always Fit Gym. All rights reserved.</p>
+            <div class="gym-details">
+                <p><strong>Gym Name:</strong> Always Fit Gym</p>
+                <p><strong>Phone Number:</strong> 9265781851</p>
+                <p><strong>Email:</strong> alwaysfit0210@gmail.com</p>
+                <p><strong>Address:</strong> 1, floor shree arcade complex aroma circle deesa highway Palanpur 385001</p>
+                <!-- Gym Timing -->
+                <p><strong>Gym Timing:</strong> 5:00 AM to 9:00 AM</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
